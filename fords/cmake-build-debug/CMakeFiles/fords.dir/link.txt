@@ -1,0 +1,2 @@
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc libfords.a CMakeFiles/fords.dir/library.c.obj
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ranlib.exe libfords.a

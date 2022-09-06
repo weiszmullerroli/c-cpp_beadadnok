@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>main.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbb529;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;bits/stdc++.h&gt;</span>
+<span class="s3">using namespace </span><span class="s1">std</span><span class="s3">;</span>
+
+<span class="s3">double </span><span class="s1">sqrt_newton(</span><span class="s3">double </span><span class="s1">num</span><span class="s3">, double </span><span class="s1">x0){</span>
+    <span class="s3">double </span><span class="s1">x = num</span><span class="s3">;</span>
+    <span class="s3">double </span><span class="s1">sol</span><span class="s3">;</span>
+    <span class="s3">int </span><span class="s1">i =</span><span class="s4">1 </span><span class="s3">;</span>
+    <span class="s3">while </span><span class="s1">(i == </span><span class="s4">1</span><span class="s1">){</span>
+        <span class="s1">sol= (x+(num/x))/</span><span class="s4">2 </span><span class="s3">;</span>
+        <span class="s3">if </span><span class="s1">(abs(sol-x)&lt;x0){</span>
+            <span class="s1">i = </span><span class="s4">0</span><span class="s3">;</span>
+        <span class="s1">}</span>
+        <span class="s1">x=sol</span><span class="s3">;</span>
+    <span class="s1">}</span>
+    <span class="s3">return </span><span class="s1">sol</span><span class="s3">;</span>
+<span class="s1">}</span>
+
+<span class="s3">int </span><span class="s1">main(){</span>
+    <span class="s1">cout &lt;&lt; sqrt_newton(</span><span class="s4">480</span><span class="s3">,</span><span class="s4">0.0001</span><span class="s1">)</span><span class="s3">;</span>
+    <span class="s3">return </span><span class="s4">0</span><span class="s3">;</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

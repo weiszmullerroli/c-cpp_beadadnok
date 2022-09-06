@@ -1,0 +1,4 @@
+MinGW not found at: C:\Program Files\CodeBlocks\MinGW Configure Disable profile
+
+Cannot get compiler information:
+	Cannot run program "C:\Program Files\CodeBlocks\MinGW\bin\g++.exe" (in directory "C:\Users\weisz\CLionProjects\cpp\1\cmake-build-debug"): CreateProcess error=2, A rendszer nem találja a megadott fájlt
